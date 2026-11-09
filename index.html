@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coco the Cat</title>
+  <meta name="description" content="The fluffiest orange cat in the apartment. Her story, her quirks, and her latest photos.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="logo" href="#top">COCO.</a>
+  <div class="links">
+    <a href="#upto">Up to</a>
+    <a href="#story">Story</a>
+    <a href="#quirks">Quirks</a>
+    <a href="#gallery">Gallery</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-text">
+    <h1>COCO.</h1>
+    <p class="tagline">The fluffiest orange cat in the apartment.</p>
+    <div class="chips">
+      <span class="chip" id="hero-chip">Currently: sunbeam</span>
+      <span class="chip dark">Say hi (no touching)</span>
+    </div>
+  </div>
+  <img class="hero-photo" src="photos/coco-sitting.jpg" alt="Coco sitting on the rug, looking off to the side">
+</header>
+
+<section class="section" id="upto">
+  <h2>What Coco's up to</h2>
+  <div class="upto-card">
+    <img id="upto-photo" src="photos/coco-chair.jpg" alt="Coco's latest photo">
+    <div class="upto-text">
+      <span class="chip" id="upto-chip"></span>
+      <p class="upto-headline" id="upto-headline"></p>
+      <p id="upto-note"></p>
+      <p class="updated">Last updated <span id="upto-updated"></span></p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="story">
+  <h2>Her story</h2>
+  <p class="lead">Coco's road to the sunbeam was a long one.</p>
+  <ol class="timeline">
+    <li>
+      <span class="when">Chapter 1</span>
+      <h3>The Bronx</h3>
+      <p>Coco was found on the street in the Bronx, on her own and expecting kittens.</p>
+    </li>
+    <li>
+      <span class="when">Chapter 2</span>
+      <h3>An angel rescuer</h3>
+      <p>The stress of the rescue brought her labor on early. With her rescuer's help, she gave birth to four or five tiny kittens, all identical little orange copies of her.</p>
+    </li>
+    <li>
+      <span class="when">Chapter 3</span>
+      <h3>Brooklyn Cat Cafe</h3>
+      <p>Coco and the kittens moved into the kitten terrarium at the Brooklyn Cat Cafe, where they stayed until the kittens were old enough to be adopted.</p>
+    </li>
+    <li>
+      <span class="when">Chapter 4</span>
+      <h3>Her turn</h3>
+      <p>One by one, the kittens found homes. Then it was Coco's turn to be adopted.</p>
+    </li>
+    <li>
+      <span class="when">Chapter 5</span>
+      <h3>A FaceTime meet-cute</h3>
+      <p>We found her on the adoption site and met her over FaceTime. We loved her immediately.</p>
+    </li>
+    <li class="last">
+      <span class="when">The best chapter</span>
+      <h3>Home</h3>
+      <p>We picked her up, and she's been ruling the apartment ever since.</p>
+    </li>
+  </ol>
+</section>
+
+<section class="section" id="quirks">
+  <h2>Coco's house rules</h2>
+  <div class="quirks">
+    <div class="quirk"><span class="emoji">🧡</span><h3>Fluffy and orange</h3><p>The cutest cat you've ever seen. She knows.</p></div>
+    <div class="quirk"><span class="emoji">🙅</span><h3>Look, don't touch</h3><p>She loves people, but pets are by invitation only. She'll tell you if you're in her space.</p></div>
+    <div class="quirk"><span class="emoji">🪑</span><h3>Sits very close</h3><p>Right next to you, but on her terms.</p></div>
+    <div class="quirk"><span class="emoji">🍽️</span><h3>Mealtime participant</h3><p>If you're eating, she's attending.</p></div>
+    <div class="quirk"><span class="emoji">👣</span><h3>Your shadow</h3><p>She follows you from room to room.</p></div>
+    <div class="quirk"><span class="emoji">☀️</span><h3>Sun chaser</h3><p>Wherever the light lands, she'll be there.</p></div>
+    <div class="quirk"><span class="emoji">📣</span><h3>Very chatty</h3><p>She announces where she is, and when she's off somewhere new.</p></div>
+    <div class="quirk"><span class="emoji">🚧</span><h3>Off-limits? Never heard of it</h3><p>She'll tell us she's going where she shouldn't, and we chase her out.</p></div>
+  </div>
+</section>
+
+<section class="section alt" id="gallery">
+  <h2>The gallery</h2>
+  <div class="gallery" id="gallery-grid"></div>
+</section>
+
+<footer class="footer">
+  <p>Made with love for Coco, and for everyone who loves her. 🧡</p>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="close" id="lb-close" aria-label="Close">×</button>
+  <figure>
+    <img id="lb-img" alt="">
+    <figcaption id="lb-cap"></figcaption>
+  </figure>
+</div>
+
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
